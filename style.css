@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Merriweather&family=Roboto+Slab&family=Rubik+Wet+Paint&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: rgb(83,136,191);
+  background: linear-gradient(0deg, rgba(83,136,191,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+#head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: rgb(0, 0, 0,0.5);
+  height: 50px;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+#logo {
+  color: rgb(36, 136, 106);
+  margin: 10px;
+}
+
+#logo img {
+  height: 30px;
+  width: 30px;
+  filter: invert();
+}
+
+#name{
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 2rem;
+  background: linear-gradient(to right, #d1fffd 20%, #68e8ff 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#check{
+  display: none;
+}
+
+.menu {
+  color: whitesmoke;
+  margin: 10px 4rem;
+}
+
+.menu li {
+  margin: 2rem;
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: bolder;
+}
+.menu li a:hover {
+  transition: all 0.3s ease-in-out;
+  font-family: "Roboto Slab", serif;
+  color: rgb(136, 172, 170);
+  font-variant: small-caps;
+}
+
+#sec {
+  grid-template-rows: repeat(3, 1fr);
+}
+#section {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-top: 5rem;
+  color: #d1fffd;
+}
+
+#profilePic {
+  border-radius: 40%;
+  width: 15rem;
+  margin: 5px 20px;
+}
+
+#about {
+  margin: 2rem 2rem;
+}
+
+#intro {
+  font-family: "Roboto Slab", serif;
+}
+
+.bio {
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 1rem;
+}
+
+#projects {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+#projects h1 {
+  padding-bottom: 20px;
+  color:  #a5f1ee;
+  font-family: "Merriweather", serif;
+}
+
+.pro-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pro img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px;
+  
+}
+.pro{
+  font-family: "Merriweather", serif;
+  color: #84dbd8;
+}
+
+.pro img:hover {
+  border-radius: 45%;
+}
+
+footer {
+  background-color:rgb(115, 152, 192);
+  font-family: "Baloo Bhai 2", cursive;
+  color: rgba(245, 245, 245, 0.80);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.80);
+}
+
+.SocialImg {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+
+@media  screen and (max-width:1060px) {
+  
+ .menu{
+  position: fixed;
+  top: 40px;
+  left: -150%;
+  height: 40vh;
+  background:rgb(0, 0, 0,0.8);
+  text-align: center;
+  width: 100%;
+  display: block;
+  transition: all 0.3 ease;
+}
+
+#check:checked ~ .menu{
+  left: 0%;
+}
+
+.menu li{
+  margin: 20px;
+  display: block;
+  
+}
+
+.menu-btn{
+ display: block;
+ color: whitesmoke;
+}
+
+#check:checked ~ .menu-btn i::before{
+ content: "\f00d";
+}
+}
+
+@media screen and (max-width: 950px) {
+
+  #section {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 1rem auto;
+  }
+
+  #profilePic {
+    width: 15rem;
+  }
+
+  #Profile-pic {
+    margin: 0 auto;
+  }
+
+  #about {
+    margin: 15px auto;
+    text-align: center;
+    height: 300px;
+    overflow: scroll;
+  }
+  #projects {
+    text-align: center;
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .pro-list{
+    display: block;
+    height: 400px;
+    overflow-y: auto;
+  }
+  .pro{  
+    font-family: "Merriweather", serif;
+    color: #84dbd8;
+    font-size: 2rem;
+  }
+  .pro img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+}
