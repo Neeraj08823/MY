@@ -48,7 +48,7 @@ li {
   -webkit-text-fill-color: transparent;
 }
 
-#check{
+#check, .menu-btn{
   display: none;
 }
 
