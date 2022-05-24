@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Merriweather&family=Roboto+Slab&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -139,6 +140,10 @@ footer {
   text-align: center;
   margin-top: 1rem;
   padding: 2rem;
+}
+
+#f-name{
+  font-family: 'Macondo', cursive;
 }
 
 a {
