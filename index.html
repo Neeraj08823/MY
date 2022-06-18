@@ -10,6 +10,7 @@
     <title>My PortFolio</title>
   </head>
   <body>
+    <!-- /*******  Nav Section *********/ -->
     <header id="head">
       <div id="logo">
         <ul>
@@ -17,10 +18,10 @@
           <li id="name">eeraj</li>
         </ul>
       </div>
-      <input type="checkbox" id="check">
+      <input type="checkbox" id="check" />
       <label for="check" class="menu-btn">
         <i class="fas fa-bars"></i>
-    </label>
+      </label>
       <nav class="menu">
         <ul>
           <li><a href="#menu">Home</a></li>
@@ -29,42 +30,95 @@
           <li><a href="./resume.pdf" target="_blank">Resume</a></li>
           <li><a href="#SocialMedia">Contact Me</a></li>
         </ul>
-      </nav>                    
+      </nav>
     </header>
 
+    <!-- /*******  About Section *********/ -->
     <div id="Sec">
       <div id="section">
         <div id="Profile-pic">
-        <img
-          id="profilePic"
-          src="https://media-exp1.licdn.com/dms/image/C5603AQF4i_olizu8KA/profile-displayphoto-shrink_800_800/0/1613444763606?e=1658361600&v=beta&t=gbkf4EDTr54a_DxRoSI6l1iDkDLYhGEQlwk7laFbHw4"
-          height="300px"
-          alt="profilePic"
-        />
-      </div>
+          <img
+            id="profilePic"
+            src="./Image/undraw_developer.svg"
+            height="300px"
+            alt="profilePic"
+          />
+        </div>
         <div id="about">
-          <h3>Hi there!</h3>
           <h1 id="intro">I'm Neeraj Kumar</h1>
-          <br>
+          <br />
           <p class="bio">
-            I live in Rajasthan Bhiwadi with my family.<br> 
-            <span> I completed my B.tech in Computer Science Engineering from Rajasthan Technical University. Since my school days,</span><br>
-            <span> I have been quite passionate about computer softwares and always wanted to work as software developer.</span> <br> <span>Talking about my hobbies and interests, I love to do photography, Traveling, Video Game and Web Surfing.</span>
+            What's up, Dear Amigo. Thanks for stopping by! You have stumbled
+            upon the portfolio of <strong>Neeraj Kumar</strong>. I'm a front End
+            web developer and I love designing websites. Wait, let's not discuss
+            all of it over here. Just have a look at my portfolio!
           </p>
         </div>
       </div>
-      <hr>
+      <!-- <hr /> -->
+
+
+      <!-- /*******  Technology Section *********/ -->
+      <section class="section">
+        <div class="container">
+            <h1 class="tech-head">Technologies</h3>
+                <p class="tech-font">I am familiar with many technologies.<br>
+                    Some of them in my skillset are :<br><strong><em>HTML5, CSS3, Bootstrap, JavaScript, ReactJS, Java, NPM, Git &
+                            NodeJS</em></strong></p>
+        </div>
+    </section>
+
+    
+    <!-- /*******  Project Section *********/ -->
+    <section class="section">
+      <div class="container">
+          <h1 class="tech-head">Projects</h3>
+              <p class="tech-font">Since I'm a student, I'm still learning new things and trying to bring out the best
+                  version of myself.
+                  Here are some of the front-end projects that I've accomplished.</p>
+              <div class="proj-btn" style="text-align:center">
+                  <a href="projects.html" class="link link-secondary">Projects</a>
+              </div>
+      </div>
+  </section>
+
+    <!-- /*******  Project Section *********/ -->
       <div id="projects">
-        <h1><u>Projects</u></h1>
-        <ul  class="pro-list">
-            <li> <a class="pro"  href="https://neeraj-kumar.netlify.app" target="_blank"> <img src="./Image/Portfolio.jpg" alt="Portfolio"><p>PortFolio</p></a></li>
-            <li> <a class="pro" href="https://nkgamehub.netlify.app" target="_blank"> <img src="./Image/Game.jpg" alt="Game"><p>GameHub</p></a></li>
-            <li> <a class="pro" href="https://nkclaculator.netlify.app/" target="_blank"> <img src="./Image/Calculator.jpg" alt="Calculator"><p>Calculator</p></a></li>
+        <ul class="pro-list">
+          <li>
+            <a
+              class="pro"
+              href="https://neeraj-kumar.netlify.app"
+              target="_blank"
+            >
+              <img src="./Image/Portfolio.jpg" alt="Portfolio" />
+              <p>PortFolio</p></a
+            >
+          </li>
+          <li>
+            <a class="pro" href="https://nkgamehub.netlify.app" target="_blank">
+              <img src="./Image/Game.jpg" alt="Game" />
+              <p>GameHub</p></a
+            >
+          </li>
+          <li>
+            <a
+              class="pro"
+              href="https://nkclaculator.netlify.app/"
+              target="_blank"
+            >
+              <img src="./Image/Calculator.jpg" alt="Calculator" />
+              <p>Calculator</p></a
+            >
+          </li>
         </ul>
       </div>
 
+
+      <!-- /*******  Footer Section *********/ -->
       <footer>
         <div id="SocialMedia">
+          <div id="f-head">Get in touch</div>
           <ul>
             <li>
               <a href="https://twitter.com/kr_neeraj_singh" target="_blank"
@@ -102,7 +156,7 @@
           >Reach me &#128231; nk08823@gmail.com</a
         >
         <p>copyright &copy; Reserved All Rights</p>
-        <h4 id="f-name">Neeraj Kumar</h4>
+        <h4 id="f-name">Made by Neeraj Kumar</h4>
       </footer>
     </div>
   </body>
