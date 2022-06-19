@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Merriweather&family=Roboto+Slab&family=Rubik+Wet+Paint&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Macondo&family=Milonga&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Londrina+Shadow&family=Macondo&family=Milonga&family=Righteous&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --dark-gray: #4b5563;
+  --light-grey: lightgrey;
 }
 
 html {
@@ -15,6 +20,49 @@ html {
     rgba(83, 136, 191, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
+}
+
+/******* Container *********/
+.container {
+  padding: 0rem 1rem;
+  max-width: 100%;
+}
+
+.container-center {
+  max-width: 600px;
+  margin: auto;
+}
+h1 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+i {
+  margin: 0rem 1.5rem;
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+/******* Section *********/
+.section {
+  padding: 2rem;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.lp {
+  background-color: var(--light-grey);
+}
+
+.lp p {
+  text-align: center;
 }
 
 /*******  Nav Section *********/
@@ -76,58 +124,67 @@ li {
   font-variant: small-caps;
 }
 
-/*******  About Section *********/
-#sec {
-  grid-template-rows: repeat(3, 1fr);
-}
-
-#section {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  margin-top: 5rem;
-  color: #d1fffd;
-}
-
-#about {
-  margin: 2rem 2rem;
+/*******  Head Section *********/
+.hero .hero-heading {
   text-align: center;
+  padding: 3rem 0rem;
+  color: lightgrey;
+  font-size: 5rem;
+  font-family: "Londrina Shadow", cursive;
+  letter-spacing: 5px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
-#intro {
-  font-family: "Lobster", cursive;
-}
-
-.bio {
-  font-family: "Milonga", cursive;
-  font-size: 1.6rem;
-  line-height: 3rem;
-  letter-spacing: 0.1rem;
-}
-
-/*******  Technology & Project Section *********/
-.section {
-  padding: 50px;
-  text-align: center;
-}
-
-.container {
-  max-width: 700px;
+.hero .hero-img {
+  max-width: 400px;
+  width: 100%;
+  display: block;
   margin: auto;
 }
 
+/*******  Project Section *********/
+.section {
+  padding: 2rem;
+  display: block;
+}
+.section h1 {
+  text-align: center;
+}
+
+.tech-head-proj {
+  font-family: "Righteous", cursive;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  color: #374151;
+  padding-bottom: 1rem;
+}
 .tech-head {
   font-family: "Righteous", cursive;
   font-size: 3rem;
   letter-spacing: 4px;
-  color: #a4faf7;
-  margin: 20px;
+  color: #9fa9b8;
+  padding-bottom: 1rem;
 }
-.tech-font {
+.img-proj {
+  max-width: 400px;
+  display: block;
+  width: 100%;
+  height: 85%;
+  margin: auto;
+  padding: 2px;
+  border: 2px solid grey;
+}
+.centralise {
+  text-align: center;
+}
+.tech-font-proj {
   font-family: "Work Sans", sans-serif;
-  font-size: 1.7rem;
-  letter-spacing: 1.5px;
-  line-height: 2.5rem;
-  color: #c4fffd;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2.3rem;
 }
 
 .proj-btn {
@@ -140,7 +197,8 @@ li {
   font-family: "Work Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 2rem;
+  margin: 0rem 1rem;
   border: 1px solid black;
   border-radius: 0.5rem;
   color: #497cb8b4;
@@ -151,6 +209,18 @@ li {
   background-color: #497cb8b4;
   color: lightgrey;
   transition: 0.5s;
+}
+
+.link-primary {
+  background-color: #497cb8b4;
+  border-radius: 0.8rem;
+  color: whitesmoke;
+}
+
+.link-primary:hover {
+  color: #497cb8b4;
+  background-color: whitesmoke;
+  transition: 0.8s;
 }
 
 /*******  Footer Section *********/
@@ -186,7 +256,7 @@ a {
 }
 
 /*******  Media Query Section *********/
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1080px) {
   .menu {
     position: fixed;
     top: 40px;
@@ -216,6 +286,11 @@ a {
   #check:checked ~ .menu-btn i::before {
     content: "\f00d";
   }
+
+  .link {
+    display: inline-block;
+    margin: 1rem 1rem;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -224,13 +299,5 @@ a {
     grid-template-columns: none;
     grid-template-rows: repeat(2, 1fr);
     margin: 1rem auto;
-  }
-
-  #Profile-pic {
-    margin: 0 auto;
-  }
-
-  #about {
-    margin: 0px auto;
   }
 }
